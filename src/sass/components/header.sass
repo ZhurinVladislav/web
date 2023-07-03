@@ -1,0 +1,55 @@
+.header
+  font-family: $font-family__2
+  font-size: 20px
+  text-transform: uppercase
+
+  &__container
+    padding-top: 8px
+    padding-bottom: 8px
+
+  .header-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 20px
+
+    &__link
+      margin-right: 20px
+
+    .list
+      display: flex
+      font-size: 16px
+
+      &__item
+        &:not(:last-child)
+          margin-right: 37px
+
+      &__link
+        transition: color .2s linear
+
+        &:hover
+          color: $color__4
+
+    .burger-btn
+      display: none
+
+  .header-bottom
+    .menu
+      .list
+        display: flex
+
+        &__item
+          &:not(:last-child)
+            margin-right: 40px
+
+          &.active
+            .list__link
+              border-color: $color__4
+
+        &__link
+          padding-bottom: 4px
+          border-bottom: 2px solid $color__0
+          transition: border-color .2s linear
+
+          &:hover
+            border-color: $color__4
